@@ -8,7 +8,7 @@
       <meta name="keyword" content="taxi,car,rent,hire,transport">
       <meta name="author" content="Themescare">
       <!-- Title -->
-      <title>gauto</title>
+      <title>PENARA Rent Car</title>
       <!-- Favicon -->
       <link rel="icon" type="image/png" sizes="32x32" href="{{asset ('gauto/assets/img/favicon/favicon-32x32.png')}}">
       <!--Bootstrap css-->
@@ -46,10 +46,10 @@
             <div class="row">
                <div class="col-md-6">
                   <div class="header-top-left">
-                     <p>Need Help?: <i class="fa fa-phone"></i> Call: +321 123 45 978</p>
+                     <p>Hubungi: <i class="fa fa-phone"></i> WA: +62 123 45 978</p>
                   </div>
                </div>
-               <div class="col-md-6">
+               {{-- <div class="col-md-6">
                   <div class="header-top-right">
                      <a href="#">
                      <i class="fa fa-key"></i>
@@ -59,18 +59,9 @@
                      <i class="fa fa-user"></i>
                      register
                      </a>
-                     <div class="dropdown">
-                        <button class="btn-dropdown dropdown-toggle" type="button" id="dropdownlang" data-toggle="dropdown" aria-haspopup="true">
-                        <img src="{{asset ('gauto/assets/img/en.png')}}" alt="lang" /> English
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownlang">
-                           <li><img src="{{asset ('gauto/assets/img/ca.png')}}" alt="lang" /> Canada</li>
-                           <li><img src="{{asset ('gauto/assets/img/fa.png')}}" alt="lang" /> French</li>
-                           <li><img src="{{asset ('gauto/assets/img/ja.png')}}" alt="lang" /> Japanese</li>
-                        </ul>
-                     </div>
+                     
                   </div>
-               </div>
+               </div> --}}
             </div>
          </div>
       </section>
@@ -95,8 +86,8 @@
                            <img src="{{asset ('gauto/assets/img/globe.png')}}" alt="globe" />
                         </div>
                         <div class="header-promo-info">
-                           <h3>Newyork, USA</h3>
-                           <p>Melbourne City, Austalia</p>
+                           <h3>Indonesia</h3>
+                           <p>Seluruh Kota</p>
                         </div>
                      </div>
                      <div class="single-header-promo">
@@ -104,17 +95,13 @@
                            <img src="{{asset ('gauto/assets/img/clock.png')}}" alt="clock" />
                         </div>
                         <div class="header-promo-info">
-                           <h3>Monday to Friday</h3>
-                           <p>9:00am - 6:00pm</p>
+                           <h3>Buka Setiap Hari</h3>
+                           <p>24 Jam Non-Stop</p>
                         </div>
                      </div>
                   </div>
                </div>
-               <div class="col-lg-3">
-                  <div class="header-action">
-                     <a href="#"><i class="fa fa-phone"></i> Request a call</a>
-                  </div>
-               </div>
+               
             </div>
          </div>
       </header>
@@ -177,7 +164,7 @@
                      <!-- Responsive Menu Start -->
                       
                      <!-- Cart Box Start -->
-                     <div class="header-cart-box">
+                     {{-- <div class="header-cart-box">
                         <div class="login dropdown">
                            <button class="dropdown-toggle cart-icon" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                            <span>2</span>
@@ -235,16 +222,16 @@
                               </div>
                            </div>
                         </div>
-                     </div>
+                     </div> --}}
                      <!-- Cart Box End -->
                       
                      <!-- Search Box Start -->
-                     <div class="search-box">
+                     {{-- <div class="search-box">
                         <form>
                            <input type="search" placeholder="Search">
                            <button type="submit"><i class="fa fa-search"></i></button>
                         </form>
-                     </div>
+                     </div> --}}
                      <!-- Search Box End -->
                       
                   </div>
@@ -265,9 +252,9 @@
                         <div class="row">
                            <div class="col-md-12">
                               <div class="slider-text">
-                                 <p>for rent $65 per day</p>
-                                 <h2>Reserved Now & Get <span>50% Off</span></h2>
-                                 <a href="#" class="gauto-btn">Reserve Now!</a>
+                                 <p>Harga mulai Rp.200.000 / hari</p>
+                                 <h2>Mobil Aman dan Nyaman</h2>
+                                 <a href="#" class="gauto-btn">Pesan Sekarang</a>
                               </div>
                            </div>
                         </div>
@@ -282,9 +269,9 @@
                         <div class="row">
                            <div class="col-md-12">
                               <div class="slider-text">
-                                 <p>for rent $70 per day</p>
-                                 <h2>Reserved Now & Get <span>50% Off</span></h2>
-                                 <a href="#" class="gauto-btn">Reserve Now!</a>
+                                 <p>Pilihan Mobil Banyak</p>
+                                 <h2>Melayani di seluruh kota</h2>
+                                 <a href="#" class="gauto-btn">Pesan Sekarang</a>
                               </div>
                            </div>
                         </div>
@@ -298,7 +285,7 @@
        
        
       <!-- Find Area Start -->
-      <section class="gauto-find-area">
+      {{-- <section class="gauto-find-area">
          <div class="container">
             <div class="row">
                <div class="col-md-12">
@@ -357,7 +344,7 @@
                </div>
             </div>
          </div>
-      </section>
+      </section> --}}
       <!-- Find Area End -->
        
        
@@ -367,15 +354,15 @@
             <div class="row">
                <div class="col-lg-6">
                   <div class="about-left">
-                     <h4>about us</h4>
-                     <h2>Welcome to gauto</h2>
-                     <p>Horem Ipsum passages, and more recently with desktop publishing software like aldus pageMaker including versions of all the Rorem Ipsum generators</p>
+                     <h4>Tentang Kami</h4>
+                     <h2>Selamat Datang di Rental Mobil PENARA</h2>
+                     <p>Penara adalah perusahaan rental mobil yang telah berpengalaman sejak 2015. Kami telah melayani banyak pelanggan Kami di seluruh Indonesia</p>
                      <div class="about-list">
                         <ul>
-                           <li><i class="fa fa-check"></i>We are a trusted name</li>
-                           <li><i class="fa fa-check"></i>we deal in have all brands</li>
-                           <li><i class="fa fa-check"></i>have a larger stock of vehicles</li>
-                           <li><i class="fa fa-check"></i>we are at worldwide locations</li>
+                           <li><i class="fa fa-check"></i>Berpengalaman Sejak 2015</li>
+                           <li><i class="fa fa-check"></i>Pilihan Mobil Banyak</li>
+                           <li><i class="fa fa-check"></i>Mobil Aman dan Nyaman</li>
+                           <li><i class="fa fa-check"></i>Melayani di seluruh Indonesia</li>
                         </ul>
                      </div>
                      <div class="about-signature">
@@ -383,8 +370,8 @@
                            <img src="{{asset ('gauto/assets/img/signature.png')}}" alt="signature" />
                         </div>
                         <div class="signature-right">
-                           <h3>Robertho Garcia</h3>
-                           <p>President</p>
+                           <h3>Irfansyah</h3>
+                           <p>Owner</p>
                         </div>
                      </div>
                   </div>
@@ -401,7 +388,7 @@
        
        
       <!-- Service Area Start -->
-      <section class="gauto-service-area section_70">
+      {{-- <section class="gauto-service-area section_70">
          <div class="container">
             <div class="row">
                <div class="col-md-12">
@@ -490,12 +477,12 @@
                </div>
             </div>
          </div>
-      </section>
+      </section> --}}
       <!-- Service Area End -->
        
        
       <!-- Promo Area Start -->
-      <section class="gauto-promo-area">
+      {{-- <section class="gauto-promo-area">
          <div class="container">
             <div class="row">
                <div class="col-md-6">
@@ -511,7 +498,7 @@
                </div>
             </div>
          </div>
-      </section>
+      </section> --}}
       <!-- Promo Area End -->
        
        
@@ -521,8 +508,8 @@
             <div class="row">
                <div class="col-md-12">
                   <div class="site-heading">
-                     <h4>Come with</h4>
-                     <h2>Hot offers</h2>
+                     <h4>Pilihan Mobil</h4>
+                     <h2>Aman dan Nyaman</h2>
                   </div>
                </div>
             </div>
@@ -531,7 +518,7 @@
                   <div class="offer-tabs">
                      <ul class="nav nav-tabs" id="offerTab" role="tablist">
                         <li class="nav-item">
-                           <a class="nav-link active" id="all-tab" data-toggle="tab" href="#all" role="tab" aria-controls="all" aria-selected="true">All Brands</a>
+                           <a class="nav-link active" id="all-tab" data-toggle="tab" href="#all" role="tab" aria-controls="all" aria-selected="true">Seluruh Merk</a>
                         </li>
                         <li class="nav-item">
                            <a class="nav-link" id="nissan-tab" data-toggle="tab" href="#nissan" role="tab" aria-controls="nissan" aria-selected="false">nissan</a>
@@ -561,15 +548,15 @@
                                        <a href="#">
                                           <h3>Toyota Alphard</h3>
                                        </a>
-                                       <h4>$50.00<span>/ Day</span></h4>
+                                       <h4>Rp250.000<span>/ Hari</span></h4>
                                        <ul>
                                           <li><i class="fa fa-car"></i>Model:2017</li>
                                           <li><i class="fa fa-cogs"></i>Automatic</li>
                                           <li><i class="fa fa-dashboard"></i>20kmpl</li>
                                        </ul>
                                        <div class="offer-action">
-                                          <a href="#" class="offer-btn-1">Rent Car</a>
-                                          <a href="#" class="offer-btn-2">Details</a>
+                                          <a href="#" class="offer-btn-1">PESAN</a>
+                                          <a href="#" class="offer-btn-2">DETAIL</a>
                                        </div>
                                     </div>
                                  </div>
@@ -585,15 +572,15 @@
                                        <a href="#">
                                           <h3>Nissan 370Z</h3>
                                        </a>
-                                       <h4>$75.00<span>/ Day</span></h4>
+                                       <h4>Rp250.000<span>/ Hari</span></h4>
                                        <ul>
                                           <li><i class="fa fa-car"></i>Model:2017</li>
                                           <li><i class="fa fa-cogs"></i>Automatic</li>
                                           <li><i class="fa fa-dashboard"></i>20kmpl</li>
                                        </ul>
                                        <div class="offer-action">
-                                          <a href="#" class="offer-btn-1">Rent Car</a>
-                                          <a href="#" class="offer-btn-2">Details</a>
+                                          <a href="#" class="offer-btn-1">PESAN</a>
+                                          <a href="#" class="offer-btn-2">DETAIL</a>
                                        </div>
                                     </div>
                                  </div>
@@ -609,15 +596,15 @@
                                        <a href="#">
                                           <h3>Audi Q3</h3>
                                        </a>
-                                       <h4>$45.00<span>/ Day</span></h4>
+                                       <h4>Rp250.000<span>/ Hari</span></h4>
                                        <ul>
                                           <li><i class="fa fa-car"></i>Model:2017</li>
                                           <li><i class="fa fa-cogs"></i>Automatic</li>
                                           <li><i class="fa fa-dashboard"></i>20kmpl</li>
                                        </ul>
                                        <div class="offer-action">
-                                          <a href="#" class="offer-btn-1">Rent Car</a>
-                                          <a href="#" class="offer-btn-2">Details</a>
+                                          <a href="#" class="offer-btn-1">PESAN</a>
+                                          <a href="#" class="offer-btn-2">DETAIL</a>
                                        </div>
                                     </div>
                                  </div>
@@ -635,15 +622,15 @@
                                        <a href="#">
                                           <h3>BMW X3</h3>
                                        </a>
-                                       <h4>$50.00<span>/ Day</span></h4>
+                                       <h4>Rp250.000<span>/ Hari</span></h4>
                                        <ul>
                                           <li><i class="fa fa-car"></i>Model:2017</li>
                                           <li><i class="fa fa-cogs"></i>Automatic</li>
                                           <li><i class="fa fa-dashboard"></i>20kmpl</li>
                                        </ul>
                                        <div class="offer-action">
-                                          <a href="#" class="offer-btn-1">Rent Car</a>
-                                          <a href="#" class="offer-btn-2">Details</a>
+                                          <a href="#" class="offer-btn-1">PESAN</a>
+                                          <a href="#" class="offer-btn-2">DETAIL</a>
                                        </div>
                                     </div>
                                  </div>
@@ -659,15 +646,15 @@
                                        <a href="#">
                                           <h3>Audi Q3</h3>
                                        </a>
-                                       <h4>$75.00<span>/ Day</span></h4>
+                                       <h4>Rp250.000<span>/ Hari</span></h4>
                                        <ul>
                                           <li><i class="fa fa-car"></i>Model:2017</li>
                                           <li><i class="fa fa-cogs"></i>Automatic</li>
                                           <li><i class="fa fa-dashboard"></i>20kmpl</li>
                                        </ul>
                                        <div class="offer-action">
-                                          <a href="#" class="offer-btn-1">Rent Car</a>
-                                          <a href="#" class="offer-btn-2">Details</a>
+                                          <a href="#" class="offer-btn-1">PESAN</a>
+                                          <a href="#" class="offer-btn-2">DETAIL</a>
                                        </div>
                                     </div>
                                  </div>
@@ -683,15 +670,15 @@
                                        <a href="#">
                                           <h3>Toyota Camry</h3>
                                        </a>
-                                       <h4>$55.00<span>/ Day</span></h4>
+                                       <h4>Rp250.000<span>/ Hari</span></h4>
                                        <ul>
                                           <li><i class="fa fa-car"></i>Model:2017</li>
                                           <li><i class="fa fa-cogs"></i>Automatic</li>
                                           <li><i class="fa fa-dashboard"></i>20kmpl</li>
                                        </ul>
                                        <div class="offer-action">
-                                          <a href="#" class="offer-btn-1">Rent Car</a>
-                                          <a href="#" class="offer-btn-2">Details</a>
+                                          <a href="#" class="offer-btn-1">PESAN</a>
+                                          <a href="#" class="offer-btn-2">DETAIL</a>
                                        </div>
                                     </div>
                                  </div>
@@ -714,15 +701,15 @@
                                        <a href="#">
                                           <h3>BMW X3</h3>
                                        </a>
-                                       <h4>$50.00<span>/ Day</span></h4>
+                                       <h4>Rp250.000<span>/ Hari</span></h4>
                                        <ul>
                                           <li><i class="fa fa-car"></i>Model:2017</li>
                                           <li><i class="fa fa-cogs"></i>Automatic</li>
                                           <li><i class="fa fa-dashboard"></i>20kmpl</li>
                                        </ul>
                                        <div class="offer-action">
-                                          <a href="#" class="offer-btn-1">Rent Car</a>
-                                          <a href="#" class="offer-btn-2">Details</a>
+                                          <a href="#" class="offer-btn-1">PESAN</a>
+                                          <a href="#" class="offer-btn-2">DETAIL</a>
                                        </div>
                                     </div>
                                  </div>
@@ -738,15 +725,15 @@
                                        <a href="#">
                                           <h3>Audi Q3</h3>
                                        </a>
-                                       <h4>$75.00<span>/ Day</span></h4>
+                                       <h4>Rp250.000<span>/ Hari</span></h4>
                                        <ul>
                                           <li><i class="fa fa-car"></i>Model:2017</li>
                                           <li><i class="fa fa-cogs"></i>Automatic</li>
                                           <li><i class="fa fa-dashboard"></i>20kmpl</li>
                                        </ul>
                                        <div class="offer-action">
-                                          <a href="#" class="offer-btn-1">Rent Car</a>
-                                          <a href="#" class="offer-btn-2">Details</a>
+                                          <a href="#" class="offer-btn-1">PESAN</a>
+                                          <a href="#" class="offer-btn-2">DETAIL</a>
                                        </div>
                                     </div>
                                  </div>
@@ -762,15 +749,15 @@
                                        <a href="#">
                                           <h3>Toyota Camry</h3>
                                        </a>
-                                       <h4>$55.00<span>/ Day</span></h4>
+                                       <h4>Rp250.000<span>/ Hari</span></h4>
                                        <ul>
                                           <li><i class="fa fa-car"></i>Model:2017</li>
                                           <li><i class="fa fa-cogs"></i>Automatic</li>
                                           <li><i class="fa fa-dashboard"></i>20kmpl</li>
                                        </ul>
                                        <div class="offer-action">
-                                          <a href="#" class="offer-btn-1">Rent Car</a>
-                                          <a href="#" class="offer-btn-2">Details</a>
+                                          <a href="#" class="offer-btn-1">PESAN</a>
+                                          <a href="#" class="offer-btn-2">DETAIL</a>
                                        </div>
                                     </div>
                                  </div>
@@ -793,15 +780,15 @@
                                        <a href="#">
                                           <h3>Nissan 370Z</h3>
                                        </a>
-                                       <h4>$75.00<span>/ Day</span></h4>
+                                       <h4>Rp250.000<span>/ Hari</span></h4>
                                        <ul>
                                           <li><i class="fa fa-car"></i>Model:2017</li>
                                           <li><i class="fa fa-cogs"></i>Automatic</li>
                                           <li><i class="fa fa-dashboard"></i>20kmpl</li>
                                        </ul>
                                        <div class="offer-action">
-                                          <a href="#" class="offer-btn-1">Rent Car</a>
-                                          <a href="#" class="offer-btn-2">Details</a>
+                                          <a href="#" class="offer-btn-1">PESAN</a>
+                                          <a href="#" class="offer-btn-2">DETAIL</a>
                                        </div>
                                     </div>
                                  </div>
@@ -817,15 +804,15 @@
                                        <a href="#">
                                           <h3>Toyota Alphard</h3>
                                        </a>
-                                       <h4>$50.00<span>/ Day</span></h4>
+                                       <h4>Rp250.000<span>/ Hari</span></h4>
                                        <ul>
                                           <li><i class="fa fa-car"></i>Model:2017</li>
                                           <li><i class="fa fa-cogs"></i>Automatic</li>
                                           <li><i class="fa fa-dashboard"></i>20kmpl</li>
                                        </ul>
                                        <div class="offer-action">
-                                          <a href="#" class="offer-btn-1">Rent Car</a>
-                                          <a href="#" class="offer-btn-2">Details</a>
+                                          <a href="#" class="offer-btn-1">PESAN</a>
+                                          <a href="#" class="offer-btn-2">DETAIL</a>
                                        </div>
                                     </div>
                                  </div>
@@ -841,15 +828,15 @@
                                        <a href="#">
                                           <h3>Audi Q3</h3>
                                        </a>
-                                       <h4>$45.00<span>/ Day</span></h4>
+                                       <h4>Rp250.000<span>/ Hari</span></h4>
                                        <ul>
                                           <li><i class="fa fa-car"></i>Model:2017</li>
                                           <li><i class="fa fa-cogs"></i>Automatic</li>
                                           <li><i class="fa fa-dashboard"></i>20kmpl</li>
                                        </ul>
                                        <div class="offer-action">
-                                          <a href="#" class="offer-btn-1">Rent Car</a>
-                                          <a href="#" class="offer-btn-2">Details</a>
+                                          <a href="#" class="offer-btn-1">PESAN</a>
+                                          <a href="#" class="offer-btn-2">DETAIL</a>
                                        </div>
                                     </div>
                                  </div>
@@ -872,15 +859,15 @@
                                        <a href="#">
                                           <h3>Audi Q3</h3>
                                        </a>
-                                       <h4>$45.00<span>/ Day</span></h4>
+                                       <h4>Rp250.000<span>/ Hari</span></h4>
                                        <ul>
                                           <li><i class="fa fa-car"></i>Model:2017</li>
                                           <li><i class="fa fa-cogs"></i>Automatic</li>
                                           <li><i class="fa fa-dashboard"></i>20kmpl</li>
                                        </ul>
                                        <div class="offer-action">
-                                          <a href="#" class="offer-btn-1">Rent Car</a>
-                                          <a href="#" class="offer-btn-2">Details</a>
+                                          <a href="#" class="offer-btn-1">PESAN</a>
+                                          <a href="#" class="offer-btn-2">DETAIL</a>
                                        </div>
                                     </div>
                                  </div>
@@ -896,15 +883,15 @@
                                        <a href="#">
                                           <h3>Nissan 370Z</h3>
                                        </a>
-                                       <h4>$75.00<span>/ Day</span></h4>
+                                       <h4>Rp250.000<span>/ Hari</span></h4>
                                        <ul>
                                           <li><i class="fa fa-car"></i>Model:2017</li>
                                           <li><i class="fa fa-cogs"></i>Automatic</li>
                                           <li><i class="fa fa-dashboard"></i>20kmpl</li>
                                        </ul>
                                        <div class="offer-action">
-                                          <a href="#" class="offer-btn-1">Rent Car</a>
-                                          <a href="#" class="offer-btn-2">Details</a>
+                                          <a href="#" class="offer-btn-1">PESAN</a>
+                                          <a href="#" class="offer-btn-2">DETAIL</a>
                                        </div>
                                     </div>
                                  </div>
@@ -920,15 +907,15 @@
                                        <a href="#">
                                           <h3>Toyota Alphard</h3>
                                        </a>
-                                       <h4>$50.00<span>/ Day</span></h4>
+                                       <h4>Rp250.000<span>/ Hari</span></h4>
                                        <ul>
                                           <li><i class="fa fa-car"></i>Model:2017</li>
                                           <li><i class="fa fa-cogs"></i>Automatic</li>
                                           <li><i class="fa fa-dashboard"></i>20kmpl</li>
                                        </ul>
                                        <div class="offer-action">
-                                          <a href="#" class="offer-btn-1">Rent Car</a>
-                                          <a href="#" class="offer-btn-2">Details</a>
+                                          <a href="#" class="offer-btn-1">PESAN</a>
+                                          <a href="#" class="offer-btn-2">DETAIL</a>
                                        </div>
                                     </div>
                                  </div>
@@ -951,15 +938,15 @@
                                        <a href="#">
                                           <h3>marcedes S-class</h3>
                                        </a>
-                                       <h4>$50.00<span>/ Day</span></h4>
+                                       <h4>Rp250.000<span>/ Hari</span></h4>
                                        <ul>
                                           <li><i class="fa fa-car"></i>Model:2017</li>
                                           <li><i class="fa fa-cogs"></i>Automatic</li>
                                           <li><i class="fa fa-dashboard"></i>20kmpl</li>
                                        </ul>
                                        <div class="offer-action">
-                                          <a href="#" class="offer-btn-1">Rent Car</a>
-                                          <a href="#" class="offer-btn-2">Details</a>
+                                          <a href="#" class="offer-btn-1">PESAN</a>
+                                          <a href="#" class="offer-btn-2">DETAIL</a>
                                        </div>
                                     </div>
                                  </div>
@@ -975,15 +962,15 @@
                                        <a href="#">
                                           <h3>Audi Q3</h3>
                                        </a>
-                                       <h4>$45.00<span>/ Day</span></h4>
+                                       <h4>Rp250.000<span>/ Hari</span></h4>
                                        <ul>
                                           <li><i class="fa fa-car"></i>Model:2017</li>
                                           <li><i class="fa fa-cogs"></i>Automatic</li>
                                           <li><i class="fa fa-dashboard"></i>20kmpl</li>
                                        </ul>
                                        <div class="offer-action">
-                                          <a href="#" class="offer-btn-1">Rent Car</a>
-                                          <a href="#" class="offer-btn-2">Details</a>
+                                          <a href="#" class="offer-btn-1">PESAN</a>
+                                          <a href="#" class="offer-btn-2">DETAIL</a>
                                        </div>
                                     </div>
                                  </div>
@@ -999,15 +986,15 @@
                                        <a href="#">
                                           <h3>Nissan 370Z</h3>
                                        </a>
-                                       <h4>$75.00<span>/ Day</span></h4>
+                                       <h4>Rp250.000<span>/ Hari</span></h4>
                                        <ul>
                                           <li><i class="fa fa-car"></i>Model:2017</li>
                                           <li><i class="fa fa-cogs"></i>Automatic</li>
                                           <li><i class="fa fa-dashboard"></i>20kmpl</li>
                                        </ul>
                                        <div class="offer-action">
-                                          <a href="#" class="offer-btn-1">Rent Car</a>
-                                          <a href="#" class="offer-btn-2">Details</a>
+                                          <a href="#" class="offer-btn-1">PESAN</a>
+                                          <a href="#" class="offer-btn-2">DETAIL</a>
                                        </div>
                                     </div>
                                  </div>
@@ -1031,8 +1018,8 @@
             <div class="row">
                <div class="col-md-12">
                   <div class="site-heading">
-                     <h4>Some words</h4>
-                     <h2>testimonial</h2>
+                     <h4>Apa Kata Pelanggan Kami?</h4>
+                     <h2>Testimoni</h2>
                   </div>
                </div>
             </div>
@@ -1047,8 +1034,8 @@
                                  <img src="{{asset ('gauto/assets/img/testimonial.jpg')}}" alt="testimonial" />
                               </div>
                               <div class="client-info">
-                                 <h3>Marco Ghaly</h3>
-                                 <p>Customer</p>
+                                 <h3>Daeng Lolo</h3>
+                                 <p>Jakarta</p>
                               </div>
                            </div>
                         </div>
@@ -1061,8 +1048,8 @@
                                  <img src="{{asset ('gauto/assets/img/testimonial-2.jpg')}}" alt="testimonial" />
                               </div>
                               <div class="client-info">
-                                 <h3>Sherief Arafa</h3>
-                                 <p>Customer</p>
+                                 <h3>Haji Udin</h3>
+                                 <p>Medan</p>
                               </div>
                            </div>
                         </div>
@@ -1075,8 +1062,8 @@
                                  <img src="{{asset ('gauto/assets/img/testimonial.jpg')}}" alt="testimonial" />
                               </div>
                               <div class="client-info">
-                                 <h3>Marco Ghaly</h3>
-                                 <p>Customer</p>
+                                 <h3>Daeng Lolo</h3>
+                                 <p>Makassar</p>
                               </div>
                            </div>
                         </div>
@@ -1089,8 +1076,8 @@
                                  <img src="{{asset ('gauto/assets/img/testimonial.jpg')}}" alt="testimonial" />
                               </div>
                               <div class="client-info">
-                                 <h3>Marco Ghaly</h3>
-                                 <p>Customer</p>
+                                 <h3>Daeng Lolo</h3>
+                                 <p>Bali</p>
                               </div>
                            </div>
                         </div>
@@ -1104,7 +1091,7 @@
        
        
       <!-- Driver Area Start -->
-      <section class="gauto-driver-area section_70">
+      {{-- <section class="gauto-driver-area section_70">
          <div class="container">
             <div class="row">
                <div class="col-md-12">
@@ -1131,7 +1118,7 @@
                      <div class="driver-text">
                         <div class="driver-name">
                            <a href="#">
-                              <h3>Marco Ghaly</h3>
+                              <h3>Daeng Lolo</h3>
                            </a>
                            <p>4 years experience</p>
                         </div>
@@ -1216,26 +1203,28 @@
                </div>
             </div>
          </div>
-      </section>
+      </section> --}}
       <!-- Driver Area End -->
        
        
       <!-- Call Area Start -->
-      <section class="gauto-call-area">
+      <section class="gauto-driver-area section_70">
          <div class="container">
             <div class="row">
                <div class="col-md-12">
                   <div class="call-box">
                      <div class="call-box-inner">
-                        <h2>With Over <span>150+</span> Partners Locations</h2>
-                        <p>Labore dolore magna aliqua ipsum veniam quis nostrud exercitation voluptate velit cillum dolore feu fugiat nulla excepteur sint occaecat sed ipsum cupidatat proident culpa exercitation ullamco laboris aliquik.</p>
+                        <h2>Melayani <span>50+</span> Kota di Indonesia</h2>
+                        <p>PENARA melayani lebih dari 50 Kota di Indonesia, Anda dapat memesan Mobil Kami dimanapun dan kapanpun.<br>PENARA Buka 24 Jam Non-Stop</p>
+                        
+                        
                         <div class="call-number">
                            <div class="call-icon">
                               <i class="fa fa-phone"></i>
                            </div>
                            <div class="call-text">
-                              <p>need any help?</p>
-                              <h4><a href="#">(431) 529 2093</a></h4>
+                              <p>Butuh Mobil Sekarang Juga?</p>
+                              <h4><a href="#">+62 123 456 789</a></h4>
                            </div>
                         </div>
                      </div>
@@ -1253,8 +1242,8 @@
             <div class="row">
                <div class="col-md-12">
                   <div class="site-heading">
-                     <h4>latest</h4>
-                     <h2>our blog</h2>
+                     {{-- <h4>Blog</h4> --}}
+                     <h2>Artikel</h2>
                   </div>
                </div>
             </div>
@@ -1340,14 +1329,14 @@
                            <img src="{{asset ('gauto/assets/img/footer-logo.png')}}" alt="footer-logo" />
                            </a>
                         </div>
-                        <p>sed do eiusmod tempor incididunt ut labore et dolore magna as aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                        <p>Penara adalah perusahaan rental mobil yang telah berpengalaman sejak 2015. Kami telah melayani banyak pelanggan Kami di seluruh Indonesia.</p>
                         <div class="footer-address">
-                           <h3>Head office</h3>
-                           <p>125 Big fella St. Road, <span>New York, Hi 5654775</span></p>
+                           <h3>Kantor Pusat</h3>
+                           <p>Jalan Merdeka, <span>Medan, Indonesia</span></p>
                            <ul>
                               <li>Phone: 326487652 </li>
-                              <li>Email: example@mail.com</li>
-                              <li>Office Time: 9AM- 4PM</li>
+                              <li>Email: cs@penara.com</li>
+                              <li>Buka: 24 Jam Non-Stop</li>
                            </ul>
                         </div>
                      </div>
@@ -1375,64 +1364,7 @@
                         </form>
                      </div>
                   </div>
-                  <div class="col-lg-4">
-                     <div class="single-footer">
-                        <h3>Recent post</h3>
-                        <ul>
-                           <li>
-                              <div class="single-footer-post">
-                                 <div class="footer-post-image">
-                                    <a href="#">
-                                    <img src="{{asset ('gauto/assets/img/post-thumb-3.jpg')}}" alt="footer post" />
-                                    </a>
-                                 </div>
-                                 <div class="footer-post-text">
-                                    <h3>
-                                       <a href="#">
-                                       Revealed: How to set goals for you and your team
-                                       </a>
-                                    </h3>
-                                    <p>Posted on: Jan 12, 2019</p>
-                                 </div>
-                              </div>
-                           </li>
-                           <li>
-                              <div class="single-footer-post">
-                                 <div class="footer-post-image">
-                                    <a href="#">
-                                    <img src="{{asset ('gauto/assets/img/post-thumb-2.jpg')}}" alt="footer post" />
-                                    </a>
-                                 </div>
-                                 <div class="footer-post-text">
-                                    <h3>
-                                       <a href="#">
-                                       Revealed: How to set goals for you and your team
-                                       </a>
-                                    </h3>
-                                    <p>Posted on: Jan 12, 2019</p>
-                                 </div>
-                              </div>
-                           </li>
-                           <li>
-                              <div class="single-footer-post">
-                                 <div class="footer-post-image">
-                                    <a href="#">
-                                    <img src="{{asset ('gauto/assets/img/post-thumb-1.jpg')}}" alt="footer post" />
-                                    </a>
-                                 </div>
-                                 <div class="footer-post-text">
-                                    <h3>
-                                       <a href="#">
-                                       apartment in the sky love three boys of his own.
-                                       </a>
-                                    </h3>
-                                    <p>Posted on: Jan 12, 2019</p>
-                                 </div>
-                              </div>
-                           </li>
-                        </ul>
-                     </div>
-                  </div>
+                  
                </div>
             </div>
          </div>
@@ -1441,7 +1373,7 @@
                <div class="row">
                   <div class="col-md-6">
                      <div class="copyright">
-                        <p>Design With <i class="fa fa-heart"></i> from <a href="#">Themescare</a></p>
+                        {{-- <p>Design With <i class="fa fa-heart"></i> from <a href="#">Bigester</a></p> --}}
                      </div>
                   </div>
                   <div class="col-md-6">
