@@ -17,4 +17,8 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('/service', function () {
+    return view('service');
+})->name('service');
+
 
