@@ -7,14 +7,8 @@
                 <nav>
                     <ul id="gauto_navigation">
                     <li><a href="{{ route('index') }}">home</a></li>                    
-                    <li><a href="{{ route('service.list') }}">service</a></li>                    
-                    <li>
-                        <a href="#">cars</a>
-                        <ul>
-                            <li><a href="car-listing.html">car listing</a></li>
-                            <li><a href="car-booking.html">car booking</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="{{ route('service.list') }}">services</a></li>                    
+                    <li><a href="{{ route('car.list') }}">cars</a></li>                    
                     <li><a href="gallery.html">gallery</a></li>
                     <li>
                         <a href="#">Shop</a>

@@ -23,7 +23,13 @@ Route::group(['prefix' => 'service'], function()
     Route::get('list', 'ServiceController@list')->name('service.list');    
     Route::get('detail/{id}', 'ServiceController@detail')->name('service.detail');    
     
+});
 
+Route::group(['prefix' => 'car'], function()
+{
+    
+    Route::get('list', 'CarController@list')->name('car.list');    
+    // Route::get('detail/{id}', 'ServiceController@detail')->name('service.detail');    
     
 });
 
