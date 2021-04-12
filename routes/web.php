@@ -15,10 +15,18 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('index');
+})->name('index');
+
+Route::group(['prefix' => 'service'], function()
+{
+    
+    Route::get('list', 'ServiceController@list')->name('service.list');    
+    Route::get('detail/{id}', 'ServiceController@detail')->name('service.detail');    
+    
+
+    
 });
 
-Route::get('/service', function () {
-    return view('service');
-})->name('service');
+
 
 
