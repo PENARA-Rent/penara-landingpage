@@ -16,4 +16,9 @@ class CarController extends Controller
         // return dd($cars[0]->brand);
         return view('car-list', compact('cars'));
     }
+
+    public function detail($id){        
+        $car = Car::findOrFail($id);                
+        return view('car-detail', compact('car'));
+    }
 }

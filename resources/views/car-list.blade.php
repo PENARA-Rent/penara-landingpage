@@ -74,7 +74,7 @@
                                         </ul>
                                         <div class="offer-action">
                                             <a href="#" class="offer-btn-1">Rent Car</a>
-                                            <a href="#" class="offer-btn-2">Details</a>
+                                            <a href="{{ route('car.detail',$car->id) }}" class="offer-btn-2">Details</a>
                                         </div>
                                     </div>
                                 </div>

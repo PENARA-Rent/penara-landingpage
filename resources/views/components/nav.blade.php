@@ -10,26 +10,7 @@
                     <li><a href="{{ route('service.list') }}">services</a></li>                    
                     <li><a href="{{ route('car.list') }}">cars</a></li>                    
                     <li><a href="gallery.html">gallery</a></li>
-                    <li>
-                        <a href="#">Shop</a>
-                        <ul>
-                            <li><a href="products.html">products</a></li>
-                            <li><a href="single-product.html">product details</a></li>
-                            <li><a href="cart.html">Shoping Cart</a></li>
-                            <li><a href="checkout.html">checkout</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">pages</a>
-                        <ul>
-                            <li><a href="blog.html">blog</a></li>
-                            <li><a href="single-blog.html">single blog</a></li>
-                            <li><a href="404.html">404 not found</a></li>
-                            <li><a href="login.html">login</a></li>
-                            <li><a href="register.html">register</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="contact.html">contact</a></li>
+                    
                     </ul>
                 </nav>
             </div>
