@@ -28,7 +28,7 @@ Route::group(['prefix' => 'service'], function()
 Route::group(['prefix' => 'car'], function()
 {
     
-    Route::get('list', 'CarController@list')->name('car.list');    
+    Route::get('list/{brandId?}', 'CarController@list')->name('car.list');    
     Route::get('detail/{id}', 'CarController@detail')->name('car.detail');    
     
 });
