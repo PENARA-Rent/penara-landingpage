@@ -10,7 +10,7 @@
                 <h3>Car Booking</h3>
                 <ul>
                    <li><i class="fa fa-home"></i></li>
-                   <li><a href="index.html">Home</a></li>
+                   <li><a>Home</a></li>
                    <li><i class="fa fa-angle-right"></i></li>
                    <li>Car Booking</li>
                 </ul>
