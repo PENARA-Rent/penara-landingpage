@@ -17,6 +17,8 @@ Route::get('/', function () {
     return view('pages.main.index');
 })->name('index');
 
+Route::get('/gallery', 'PhotoController@list')->name('gallery');
+
 Route::group(['prefix' => 'service'], function()
 {
     

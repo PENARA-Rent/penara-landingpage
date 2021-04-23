@@ -9,7 +9,7 @@
                     <li><a href="{{ route('index') }}">home</a></li>                    
                     <li><a href="{{ route('service.list') }}">services</a></li>                    
                     <li><a href="{{ route('car.list') }}">cars</a></li>                    
-                    <li><a href="gallery.html">gallery</a></li>
+                    <li><a href="{{ route('gallery') }}">gallery</a></li>
                     
                     </ul>
                 </nav>
