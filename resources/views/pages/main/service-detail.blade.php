@@ -11,7 +11,7 @@
                 <h3>Service</h3>
                 <ul>
                    <li><i class="fa fa-home"></i></li>
-                   <li><a href="index.html">Home</a></li>
+                   <li><a>Home</a></li>
                    <li><i class="fa fa-angle-right"></i></li>
                    <li>Service</li>
                 </ul>
@@ -86,11 +86,11 @@
                     @foreach ($selectedService->service_faqs as $service_faq)                        
                         <div class="single_faq_accordian">
                             <div class="faq_accordian_header">
-                                <a class="btn btn-link collapsed" href="#" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                <a class="btn btn-link collapsed" href="#" id="heading{{ $service_faq->id }}" data-toggle="collapse" data-target="#collapse{{ $service_faq->id }}" aria-expanded="false" aria-controls="collapse{{ $service_faq->id }}">
                                 {{ $service_faq->question }}
                                 </a>
                             </div>
-                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div id="collapse{{ $service_faq->id }}" class="collapse" aria-labelledby="heading{{ $service_faq->id }}" data-parent="#accordion">
                                 <div class="faq_accordian_body">
                                 <p>{{ $service_faq->answer }}</p>
                                 </div>
