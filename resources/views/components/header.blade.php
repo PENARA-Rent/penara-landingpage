@@ -19,7 +19,7 @@
         <div class="row">
         <div class="col-md-3">
             <div class="site-logo">
-                <a href="index.html">
+                <a href="{{ route('index') }}">
                 <img src="{{asset ('gauto/assets/img/logo.png')}}" alt="gauto" />
                 </a>
             </div>
