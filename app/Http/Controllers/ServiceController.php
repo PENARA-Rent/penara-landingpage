@@ -10,12 +10,12 @@ class ServiceController extends Controller
     //
     public function list(){        
         $services = Service::all();        
-        return view('service', compact('services'));
+        return view('pages.main.service', compact('services'));
     }
 
     public function detail($id){        
         $services = Service::all();        
         $selectedService = Service::findOrFail($id);        
-        return view('service-detail', compact('services','selectedService'));
+        return view('pages.main.service-detail', compact('services','selectedService'));
     }
 }
