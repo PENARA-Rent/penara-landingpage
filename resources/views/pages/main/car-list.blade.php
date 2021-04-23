@@ -11,7 +11,7 @@
                 <h3>Car Listing</h3>
                 <ul>
                    <li><i class="fa fa-home"></i></li>
-                   <li><a href="index.html">Home</a></li>
+                   <li><a>Home</a></li>
                    <li><i class="fa fa-angle-right"></i></li>
                    <li>Car Listing</li>
                 </ul>
@@ -28,14 +28,29 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-4">                
-                <div class="sidebar-widget">
-                    <ul class="service-menu">
-                        <li class="active">
-                            <a href="#">All Brands<span>(2376)</span></a>
-                        </li>
-                        <li>
-                            <a href="#">Toyota<span>(237)</span></a>
-                        </li>
+                <div class="sidebar-widget">                    
+                    <ul class="service-menu">                        
+                        @if ($brandId == 0)                            
+                            <li class="active">
+                                <a href="{{ route('car.list')}}">All Brands<span>({{$allCarCount}})</span></a>
+                            </li>
+                        @else
+                            <li>
+                                <a href="{{ route('car.list')}}">All Brands<span>({{$allCarCount}})</span></a>
+                            </li>
+                        @endif
+                        @foreach ($brands as $brand)               
+                            @if ($brandId == $brand->id)                            
+                                <li class="active">
+                                    <a href="{{ route('car.list', $brand->id )}}">{{$brand->name}}<span>({{ count($brand->cars) }})</span></a>
+                                </li>
+                            @else
+                                <li>
+                                    <a href="{{ route('car.list', $brand->id )}}">{{$brand->name}}<span>({{ count($brand->cars) }})</span></a>
+                                </li>
+                            @endif             
+                        
+                        @endforeach
                         
                     </ul>
                 </div>                
@@ -83,18 +98,9 @@
                     </div>
                     
                 </div>
-                <div class="pagination-box-row">
-                    <p>Page 1 of 6</p>
-                    <ul class="pagination">
-                        <li class="active"><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li>...</li>
-                        <li><a href="#">6</a></li>
-                        <li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
-                    </ul>
-                </div>
-                </div>
+                <!-- module pagination begin -->                
+                {{ $cars->onEachSide(2)->links('components.paginator') }}                              
+                <!-- module pagination end -->
             </div>
         </div>
     </div>
