@@ -70,6 +70,13 @@
              </div>
           </div>
        </div>
+       <div class="row">
+         <div class="col-md-12">
+            <div class="load-more">
+               <a href="{{ route('car.list') }}" class="gauto-btn">Tampilkan Mobil Lain</a>   
+            </div>
+         </div>
+      </div>  
     </div>
 </section>
 <!-- Car Booking Area End -->
