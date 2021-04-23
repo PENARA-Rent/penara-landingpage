@@ -13,9 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('pages.main.index');
-})->name('index');
+Route::get('/', 'HomeController@home')->name('home');
 
 Route::get('/gallery', 'PhotoController@list')->name('gallery');
 

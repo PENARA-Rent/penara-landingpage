@@ -8,12 +8,12 @@
        <div class="row">
           <div class="col-md-12">
              <div class="breadcromb-box">
-                <h3>Car Listing</h3>
+                <h3>Pilihan Mobil</h3>
                 <ul>
                    <li><i class="fa fa-home"></i></li>
-                   <li><a>Home</a></li>
+                   <li><a>Beranda</a></li>
                    <li><i class="fa fa-angle-right"></i></li>
-                   <li>Car Listing</li>
+                   <li>Pilihan Mobil</li>
                 </ul>
              </div>
           </div>
@@ -32,11 +32,11 @@
                     <ul class="service-menu">                        
                         @if ($brandId == 0)                            
                             <li class="active">
-                                <a href="{{ route('car.list')}}">All Brands<span>({{$allCarCount}})</span></a>
+                                <a href="{{ route('car.list')}}">Semua Merek<span>({{$allCarCount}})</span></a>
                             </li>
                         @else
                             <li>
-                                <a href="{{ route('car.list')}}">All Brands<span>({{$allCarCount}})</span></a>
+                                <a href="{{ route('car.list')}}">Semua Merek<span>({{$allCarCount}})</span></a>
                             </li>
                         @endif
                         @foreach ($brands as $brand)               
@@ -88,8 +88,8 @@
                                             
                                         </ul>
                                         <div class="offer-action">
-                                            <a href="#" class="offer-btn-1">Rent Car</a>
-                                            <a href="{{ route('car.detail',$car->id) }}" class="offer-btn-2">Details</a>
+                                            <a href="#" class="offer-btn-1"><i>Booking</i></a>
+                                            <a href="{{ route('car.detail',$car->id) }}" class="offer-btn-2">Detail</a>
                                         </div>
                                     </div>
                                 </div>

@@ -8,8 +8,8 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="site-heading">
-                    <h4>See our</h4>
-                    <h2>Latest Services</h2>
+                    <h4>Pilihan</h4>
+                    <h2>Layanan Kami</h2>
                 </div>
             </div>
         </div>
