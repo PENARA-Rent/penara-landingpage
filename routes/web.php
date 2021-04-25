@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'HomeController@home')->name('home');
+Route::get('/', 'IndexController@index')->name('index');
 
 Route::get('/gallery', 'PhotoController@list')->name('gallery');
 

@@ -8,13 +8,12 @@ use App\CarFeature;
 use App\CarImage;
 use App\Brand;
 
-class HomeController extends Controller
+class IndexController extends Controller
 {
     
-    public function home()
-    {
-        
+    public function index()
+    {        
         $cars = Car::take(3)->get();             
-        return view('pages.main.home', compact('cars'));
+        return view('pages.main.index', compact('cars'));
     }
 }
