@@ -104,8 +104,8 @@
                            <div class="col-lg-4">
                               <div class="single-offers">
                                  <div class="offer-image">
-                                     <a href="#">                                                                                    
-                                         <img src="{{asset ($car->car_images[0]->path) }}" />                                        
+                                     <a href="#">                                                                                                                       
+                                       <img src="{{asset ($car->car_images[0]->path) }}" />
                                      </a>
                                  </div>
                                  <div class="offer-text">

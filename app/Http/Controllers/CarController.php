@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Storage;
 use App\Car;
 use App\CarFeature;
 use App\CarImage;
@@ -87,7 +88,8 @@ class CarController extends Controller
             'brand_id' => 'required|integer',
             'name' => 'required',            
             'description' => 'required',
-            'price' => 'required|integer|between:1,10000000',            
+            'price' => 'required|integer|between:1,10000000',                
+            'car_image' => 'required|mimes:png|max:2000' // max 10000kb  
         ]);
             
         $data = [            
@@ -95,21 +97,29 @@ class CarController extends Controller
             'name' => $request->name,
             'description' => $request->description,
             'price' => $request->price,
+            'car_image' => $request->car_image,
         ];
 
         
         
         $car = Car::create($data);
 
+        //Car Image        
+
+        // generate a new filename. getClientOriginalExtension() for the file extension
+        $filename = 'profile-photo-' . time() . '.' . $request->file('car_image')->getClientOriginalExtension();
+
+        $request->file('car_image')->storeAs('public/images/cars', $filename);        
+
         $data = [            
             'car_id' => $car->id,
-            'path' => "gauto/assets/img/offer-toyota.png"                   
+            'path' => 'storage/images/cars/' . $filename
         ];
 
         $carImage = CarImage::create($data);
         
 
-        // return dd($car);
+        // return dd($carImage);
         return redirect()->route('admin.car.list')->with('success', 'Car was Successfully Added :)');   
         // return redirect()->back()->with('message','Car was Successfully Added :)');   
     }

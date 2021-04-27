@@ -17,17 +17,31 @@
 <div class="row">
 
     <div class="col-md-6">
+        @if ($errors->any())        
+            @foreach ($errors->all() as $error)                
+                <div class="alert alert-danger"></i> 
+                    {{ $error }}
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"> <span aria-hidden="true">×</span> </button>
+                </div>
+            @endforeach
+        @endif
+        @if (\Session::has('success'))
+            <div class="alert alert-success"></i> 
+                {!! \Session::get('success') !!}
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"> <span aria-hidden="true">×</span> </button>
+            </div>            
+        @endif
         <div class="card card-body">
             <h3 class="box-title m-b-0">Car </h3>
             <p class="text-muted m-b-30 font-13"> Form </p>
             <div class="row">
                 <div class="col-sm-12 col-xs-12">
-                    <form action="{{ route('admin.car.store') }}" method="POST">
+                    <form action="{{ route('admin.car.store') }}" method="POST" enctype="multipart/form-data" >
                         {{ csrf_field() }}
                         <div class="form-group">
                             <h4 class="card-title">Car Image</h4>
-                            <label for="input-file-now-custom-1">You can add a default value</label>
-                            <input type="file" id="car_image" class="dropify" data-max-file-size="2M" />
+                            <label for="input-file-now-custom-1">Maximum Size 2MB and File Type Must be .png</label>
+                            <input required type="file" name="car_image" class="dropify" data-max-file-size="2M" />
                         </div>
                         <div class="form-group">
                             <label for="example-month-input">Brand</label>
