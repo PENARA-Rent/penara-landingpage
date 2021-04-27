@@ -134,7 +134,7 @@
                     </div>
                     <!-- End User profile text-->
                     <!-- Sidebar navigation-->
-                    <nav class="sidebar-nav">
+                    @include('components.admin.sidebar')
                         <ul id="sidebarnav">
                             <li class="nav-small-cap">PERSONAL</li>
                             <li>
