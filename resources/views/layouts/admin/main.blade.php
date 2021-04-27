@@ -55,7 +55,7 @@
                     <!-- Logo -->
                     <!-- ============================================================== -->
                     <div class="navbar-header">
-                        <a class="navbar-brand" href="index.html">
+                        <a class="navbar-brand" href="{{ route('index') }}">
                             <!-- Logo icon -->
                             <b>
                                 <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
@@ -68,9 +68,9 @@
                             <!-- Logo text -->
                             <span>
                             <!-- dark Logo text -->
-                            {{-- <img src="{{asset ('material/images/logo-text.png')}}" alt="homepage" class="dark-logo" /> --}}
+                            <img src="{{asset ('gauto/assets/img/logo-white.png')}}" alt="homepage" class="dark-logo" />
                             <!-- Light Logo text -->    
-                            {{-- <img src="{{asset ('material/images/logo-light-text.png')}}" class="light-logo" alt="homepage" /></span> </a> --}}
+                            <img src="{{asset ('gauto/assets/img/logo-white.png')}}" class="light-logo" alt="homepage" /></span> </a>
                     </div>
                     <!-- ============================================================== -->
                     <!-- End Logo -->
@@ -100,12 +100,23 @@
                                             <div class="dw-user-box">
                                                 <div class="u-img"><img src="{{asset ('material/images/users/1.jpg')}}" alt="user"></div>
                                                 <div class="u-text">
-                                                    <h4>Steave Jobs</h4>
-                                                    <p class="text-muted">varun@gmail.com</p><a href="profile.html" class="btn btn-rounded btn-danger btn-sm">View Profile</a></div>
+                                                    <h5>{{ Auth::user()->name }}</h5>
+                                                    {{-- <p class="text-muted">{{ Auth::user()->name }}</p> --}}
+                                                    <a href="profile.html" class="btn btn-rounded btn-danger btn-sm">View Profile</a></div>
                                             </div>
                                         </li>                                                                                                                        
                                         <li role="separator" class="divider"></li>
-                                        <li><a href="#"><i class="fa fa-power-off"></i> Logout</a></li>
+                                        <li>
+                                            <a  href="{{ route('logout') }}"
+                                               onclick="event.preventDefault();
+                                                             document.getElementById('logout-form').submit();">
+                                                <i class="fa fa-power-off"></i> Logout
+                                            </a>
+                                        </li>
+        
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                            @csrf
+                                        </form>
                                     </ul>
                                 </div>
                             </li>
@@ -129,20 +140,12 @@
                         <div class="profile-img"> <img src="{{asset ('material/images/users/1.jpg')}}" alt="user" /> </div>
                         <!-- User profile text-->
                         <div class="profile-text"> 
-                            <a data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Name<span class="caret"></span></a>                        
+                            <a data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">{{ Auth::user()->name }}<span class="caret"></span></a>                        
                         </div>
                     </div>
                     <!-- End User profile text-->
                     <!-- Sidebar navigation-->
                     @include('components.admin.sidebar')
-                        <ul id="sidebarnav">
-                            <li class="nav-small-cap">PERSONAL</li>
-                            <li>
-                                <a href="{{ route('gallery') }}" aria-expanded="false"><i class="fa fa-circle"></i><span class="hide-menu">Dashboard</span></a>
-                            </li>
-                            
-                        </ul>
-                    </nav>
                     
                     
                     <!-- End Sidebar navigation -->
