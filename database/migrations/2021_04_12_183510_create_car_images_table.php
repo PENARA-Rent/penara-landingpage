@@ -17,6 +17,7 @@ class CreateCarImagesTable extends Migration
             $table->id();
             $table->foreignId('car_id')->constrained();
             $table->string('path');
+            $table->string('file_name');
             $table->timestamps();
         });
     }

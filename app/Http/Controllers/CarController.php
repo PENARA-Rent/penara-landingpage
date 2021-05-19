@@ -98,22 +98,21 @@ class CarController extends Controller
             'description' => $request->description,
             'price' => $request->price,
             'car_image' => $request->car_image,
-        ];
-
+        ];        
         
+        
+        //Car Image        
+        // generate a new filename. getClientOriginalExtension() for the file extension
+        $filename = 'car-photo-' . time() . '.' . $request->file('car_image')->getClientOriginalExtension();
         
         $car = Car::create($data);
-
-        //Car Image        
-
-        // generate a new filename. getClientOriginalExtension() for the file extension
-        $filename = 'profile-photo-' . time() . '.' . $request->file('car_image')->getClientOriginalExtension();
-
+        
         $request->file('car_image')->storeAs('public/images/cars', $filename);        
 
         $data = [            
             'car_id' => $car->id,
-            'path' => 'storage/images/cars/' . $filename
+            'path' => 'storage/images/cars/' . $filename,
+            'file_name' => $filename
         ];
 
         $carImage = CarImage::create($data);
@@ -121,6 +120,6 @@ class CarController extends Controller
 
         // return dd($carImage);
         return redirect()->route('admin.car.list')->with('success', 'Car was Successfully Added :)');   
-        // return redirect()->back()->with('message','Car was Successfully Added :)');   
+        
     }
 }

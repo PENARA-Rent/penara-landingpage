@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'IndexController@index')->name('index');
 
-Route::get('/gallery', 'PhotoController@list')->name('gallery');
+Route::get('/gallery', 'GalleryController@list')->name('gallery');
 
 Route::group(['prefix' => 'service'], function()
 {
@@ -45,5 +45,14 @@ Route::group(['prefix' => 'admin',  'middleware' => ['auth']], function(){
         Route::post('/store', 'CarController@store')->name('admin.car.store');
         Route::get('/detail/{id}', 'CarController@adminDetail')->name('admin.car.detail');
         Route::post('/edit', 'CarController@edit')->name('admin.car.edit');
+    });   
+
+    Route::group(['prefix' => 'gallery'], function(){
+        Route::get('/list', 'GalleryController@adminList')->name('admin.gallery.list');        
+        Route::get('/add', 'GalleryController@addForm')->name('admin.gallery.add');
+        Route::post('/store', 'GalleryController@store')->name('admin.gallery.store');
+        Route::get('/detail/{id}', 'GalleryController@detail')->name('admin.gallery.detail');
+        Route::get('/delete/{id}', 'GalleryController@delete')->name('admin.gallery.delete');
+        
     });   
 });

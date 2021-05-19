@@ -12,6 +12,14 @@
                 
             </ul>
         </li> 
+        <li>
+            <a class="has-arrow " href="#" aria-expanded="false"><i class="mdi mdi-panorama"></i><span class="hide-menu">Gallery</span></a>
+            <ul aria-expanded="false" class="collapse">                
+                <li><a href="{{ route('admin.gallery.list') }}">List</a></li>
+                <li><a href="{{ route('admin.gallery.add') }}">Add</a></li>
+                
+            </ul>
+        </li> 
         
     </ul>
 </nav>

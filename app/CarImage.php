@@ -13,7 +13,7 @@ class CarImage extends Model
      * @var array
      */
     protected $fillable = [
-        'car_id', 'path'
+        'car_id', 'path', 'file_name'
     ];
     public function car()
     {
