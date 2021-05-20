@@ -62,12 +62,7 @@ class BrandController extends Controller
         return view('pages.admin.brand.detail', compact('brand'));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Photo  $photo
-     * @return \Illuminate\Http\Response
-     */
+    
     public function edit(Request $request)
     {
         //
@@ -84,24 +79,13 @@ class BrandController extends Controller
         return redirect()->route('admin.brand.list')->with('success', 'Brand was Successfully Updated :)');   
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Photo  $photo
-     * @return \Illuminate\Http\Response
-     */
+    
     public function update(Request $request, Photo $photo)
     {
         //
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Photo  $photo
-     * @return \Illuminate\Http\Response
-     */
+    
     public function delete($id)
     {
         //        
