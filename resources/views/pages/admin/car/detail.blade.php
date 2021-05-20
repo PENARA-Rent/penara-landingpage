@@ -36,9 +36,17 @@
             <p class="text-muted m-b-30 font-13"> Form </p>
             <div class="row">
                 <div class="col-sm-12 col-xs-12">
-                    <form action="{{ route('admin.car.edit') }}" method="POST">
+                    <form action="{{ route('admin.car.edit') }}" method="POST" enctype="multipart/form-data">
                         {{ csrf_field() }}
                         <div class="form-group">
+                            
+                            <label for="example-month-input">Image</label>                                  
+                            <input type="file" id="car_image" name="car_image" class="dropify" data-max-file-size="2M" value="{{asset ($car->car_images[0]->path) }}" data-default-file="{{asset ($car->car_images[0]->path) }}" data-show-remove="false" />
+                            <small class="form-control-feedback"> Maximum Size 2MB and File Type Must be .png </small>                           
+
+                        </div>
+                        <div class="form-group">                                                        
+                            
                             <label for="example-month-input">Brand</label>
                             <input hidden type="text" name="id" value="{{$car->id}}">
                             <div>
@@ -66,7 +74,7 @@
                             <label for="exampleInputPassword1">Price/Day</label>
                             <input required type="number" class="form-control" name="price" value="{{ $car->price }}">
                         </div>                        
-                        <button type="submit" class="btn btn-success waves-effect waves-light m-r-10">Submit</button>
+                        <button type="submit" class="btn btn-success waves-effect waves-light m-r-10">Edit</button>
                         <a type="button" href="{{ route('admin.car.list') }}" class="btn btn-inverse">Cancel</a>
                     </form>
                 </div>
@@ -81,6 +89,52 @@
     
 <script src="{{asset ('material/plugins/toast-master/js/jquery.toast.js')}}"></script>
 <script src="{{asset ('material/js/toastr.js')}}"></script>
+
+<!-- jQuery file upload -->
+<script src="{{asset ('material/plugins/dropify/dist/js/dropify.min.js')}}"></script>
+<script>
+$(document).ready(function() {
+        
+    // Basic
+    $('.dropify').dropify();
+
+    // Translated
+    $('.dropify-fr').dropify({
+        messages: {
+            default: 'Glissez-déposez un fichier ici ou cliquez',
+            replace: 'Glissez-déposez un fichier ou cliquez pour remplacer',
+            remove: 'Supprimer',
+            error: 'Désolé, le fichier trop volumineux'
+        }
+    });
+
+    // Used events
+    var drEvent = $('#input-file-events').dropify();
+
+    drEvent.on('dropify.beforeClear', function(event, element) {
+        return confirm("Do you really want to delete \"" + element.file.name + "\" ?");
+    });
+
+    drEvent.on('dropify.afterClear', function(event, element) {
+        alert('File deleted');
+    });
+
+    drEvent.on('dropify.errors', function(event, element) {
+        console.log('Has Errors');
+    });
+
+    var drDestroy = $('#input-file-to-destroy').dropify();
+    drDestroy = drDestroy.data('dropify')
+    $('#toggleDropify').on('click', function(e) {
+        e.preventDefault();
+        if (drDestroy.isDropified()) {
+            drDestroy.destroy();
+        } else {
+            drDestroy.init();
+        }
+    })
+});
+</script>
 
 
 @endsection

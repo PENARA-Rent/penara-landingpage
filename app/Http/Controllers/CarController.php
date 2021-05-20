@@ -52,38 +52,58 @@ class CarController extends Controller
         return view('pages.admin.car.detail', compact('brands','car'));
     }
 
-    public function edit(Request $request){  
-        
+    public function edit(Request $request){          
         $validated = $request->validate([
             'brand_id' => 'required|integer',
             'name' => 'required',            
             'description' => 'required',
-            'price' => 'required|integer|between:1,10000000',            
-        ]);
+            'price' => 'required|integer|between:1,10000000',      
+            'car_image' => 'mimes:png|max:2000' // max 10000kb      
+        ]);        
 
         $brands = Brand::all();                      
-        $car = Car::find($request->id);
-
-        // return dd($car);
+        $car = Car::find($request->id);        
 
         $data = [            
             'brand_id' => $request->brand_id,
             'name' => $request->name,
             'description' => $request->description,
-            'price' => $request->price,
+            'price' => $request->price,               
         ];
         
         $car->brand_id = $request->brand_id;
         $car->name = $request->name;
         $car->description = $request->description;
-        $car->price = $request->price;
+        $car->price = $request->price;        
+
         $car->save();
+
+        //Update Image
+        if($request->car_image != null){
+
+            //Delete Old Image
+            Storage::delete('public/images/cars/'.$car->car_images[0]->file_name);
+            $car->car_images[0]->delete();
+    
+            // generate a new filename. getClientOriginalExtension() for the file extension
+            $filename = 'car-photo-' . time() . '.' . $request->file('car_image')->getClientOriginalExtension();                                
+            
+            $request->file('car_image')->storeAs('public/images/cars', $filename);        
+    
+            $data = [            
+                'car_id' => $car->id,
+                'path' => 'storage/images/cars/' . $filename,
+                'file_name' => $filename
+            ];
+    
+            $carImage = CarImage::create($data);
+        }
         
-        return redirect()->back()->with('success', 'Car was Successfully Updated :)');   
-        // return view('pages.admin.car.detail', compact('brands','car'));
+        return redirect()->back()->with('success', 'Car was Successfully Updated :)');           
     }
 
     public function store(Request $request){        
+        
         $validated = $request->validate([
             'brand_id' => 'required|integer',
             'name' => 'required',            
@@ -96,14 +116,13 @@ class CarController extends Controller
             'brand_id' => $request->brand_id,
             'name' => $request->name,
             'description' => $request->description,
-            'price' => $request->price,
-            'car_image' => $request->car_image,
+            'price' => $request->price,            
         ];        
         
         
         //Car Image        
         // generate a new filename. getClientOriginalExtension() for the file extension
-        $filename = 'car-photo-' . time() . '.' . $request->file('car_image')->getClientOriginalExtension();
+        $filename = 'car-photo-' . time() . '.' . $request->file('car_image')->getClientOriginalExtension();                
         
         $car = Car::create($data);
         

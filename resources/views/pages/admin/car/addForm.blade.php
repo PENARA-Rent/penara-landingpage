@@ -39,9 +39,9 @@
                     <form action="{{ route('admin.car.store') }}" method="POST" enctype="multipart/form-data" >
                         {{ csrf_field() }}
                         <div class="form-group">
-                            <h4 class="card-title">Car Image</h4>
-                            <label for="input-file-now-custom-1">Maximum Size 2MB and File Type Must be .png</label>
+                            <label for="example-month-input">Image</label>                             
                             <input required type="file" name="car_image" class="dropify" data-max-file-size="2M" />
+                            <small class="form-control-feedback"> Maximum Size 2MB and File Type Must be .png </small>                           
                         </div>
                         <div class="form-group">
                             <label for="example-month-input">Brand</label>
