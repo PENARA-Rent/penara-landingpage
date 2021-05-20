@@ -3,7 +3,13 @@
         <li class="nav-small-cap">Admin</li>
         <li>
             <a href="{{ route('admin.index') }}" aria-expanded="false"><i class="fa fa-circle"></i><span class="hide-menu">Dashboard</span></a>
-        </li>   
+        </li>  
+        {{-- <li>
+            <a class="has-arrow " href="#" aria-expanded="false"><i class="mdi mdi-account"></i><span class="hide-menu">Customer</span></a>
+            <ul aria-expanded="false" class="collapse">                
+                <li><a href="{{ route('admin.customer.list') }}">List</a></li>                                
+            </ul>
+        </li>   --}}
         <li>
             <a class="has-arrow " href="#" aria-expanded="false"><i class="mdi mdi-tag-multiple"></i><span class="hide-menu">Brand</span></a>
             <ul aria-expanded="false" class="collapse">                

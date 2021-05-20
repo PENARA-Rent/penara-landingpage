@@ -37,7 +37,15 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::group(['prefix' => 'admin',  'middleware' => ['auth']], function(){
-    Route::get('/', 'AdminController@index')->name('admin.index');        
+    Route::get('/', 'AdminController@index')->name('admin.index');      
+    
+    Route::group(['prefix' => 'customer'], function(){
+        Route::get('/list', 'CustomerController@list')->name('admin.customer.list');        
+        // Route::get('/add', 'BrandController@addForm')->name('admin.brand.add');
+        // Route::post('/store', 'BrandController@store')->name('admin.brand.store');
+        Route::get('/detail/{id}', 'CustomerController@adminDetail')->name('admin.customer.detail');
+        Route::post('/edit', 'CustomerController@edit')->name('admin.customer.edit');
+    });  
     
     Route::group(['prefix' => 'brand'], function(){
         Route::get('/list', 'BrandController@list')->name('admin.brand.list');        
