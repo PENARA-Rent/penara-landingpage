@@ -39,6 +39,14 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::group(['prefix' => 'admin',  'middleware' => ['auth']], function(){
     Route::get('/', 'AdminController@index')->name('admin.index');        
     
+    Route::group(['prefix' => 'brand'], function(){
+        Route::get('/list', 'BrandController@list')->name('admin.brand.list');        
+        Route::get('/add', 'BrandController@addForm')->name('admin.brand.add');
+        Route::post('/store', 'BrandController@store')->name('admin.brand.store');
+        Route::get('/detail/{id}', 'BrandController@adminDetail')->name('admin.brand.detail');
+        Route::post('/edit', 'BrandController@edit')->name('admin.brand.edit');
+    });   
+
     Route::group(['prefix' => 'car'], function(){
         Route::get('/list', 'CarController@adminList')->name('admin.car.list');        
         Route::get('/add', 'CarController@addForm')->name('admin.car.add');

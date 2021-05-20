@@ -3,7 +3,15 @@
         <li class="nav-small-cap">Admin</li>
         <li>
             <a href="{{ route('admin.index') }}" aria-expanded="false"><i class="fa fa-circle"></i><span class="hide-menu">Dashboard</span></a>
-        </li>        
+        </li>   
+        <li>
+            <a class="has-arrow " href="#" aria-expanded="false"><i class="mdi mdi-tag-multiple"></i><span class="hide-menu">Brand</span></a>
+            <ul aria-expanded="false" class="collapse">                
+                <li><a href="{{ route('admin.brand.list') }}">List</a></li>
+                <li><a href="{{ route('admin.brand.add') }}">Add</a></li>
+                
+            </ul>
+        </li>     
         <li>
             <a class="has-arrow " href="#" aria-expanded="false"><i class="mdi mdi-car"></i><span class="hide-menu">Car</span></a>
             <ul aria-expanded="false" class="collapse">                
