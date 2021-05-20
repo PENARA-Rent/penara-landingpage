@@ -50,11 +50,13 @@
             <div class="col-md-12">
                 <div class="load-more">                                                            
                     {{-- Next Page Link --}}
-                    @if ($photos->hasMorePages())
-                        <a href="{{ $photos->nextPageUrl() }}" class="gauto-btn">More Pictures</a>                
-                    @else
-                        <a href="{{ $photos->url(1) }}" class="gauto-btn">More Pictures</a>
-                    @endif                    
+                    @if($photos->hasPages())
+                        @if ($photos->hasMorePages())
+                            <a href="{{ $photos->nextPageUrl() }}" class="gauto-btn">More Pictures</a>                
+                        @else
+                            <a href="{{ $photos->url(1) }}" class="gauto-btn">More Pictures</a>
+                        @endif                    
+                    @endif                  
                 </div>
             </div>
         </div>
