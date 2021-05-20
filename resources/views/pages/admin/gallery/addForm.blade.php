@@ -40,7 +40,7 @@
                         {{ csrf_field() }}
                         <div class="form-group">
                             <h4 class="card-title">Photo</h4>
-                            <label for="input-file-now-custom-1">Maximum Size 2MB and File Type Must be .png</label>
+                            <label for="input-file-now-custom-1">Maximum Size 2MB and File Type Must be .png or .jpg</label>
                             <input required type="file" name="file" class="dropify" data-max-file-size="2M" />
                         </div>     
                         <div class="form-group">

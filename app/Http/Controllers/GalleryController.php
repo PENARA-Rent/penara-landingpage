@@ -56,7 +56,7 @@ class GalleryController extends Controller
         // return dd($request);
         $validated = $request->validate([
             'title' => 'required',
-            'file' => 'required|mimes:png|max:2000', // max 10000kb                                                
+            'file' => 'required|mimes:png,jpg|max:2000', // max 10000kb                                                
         ]);
 
         // generate a new filename. getClientOriginalExtension() for the file extension
