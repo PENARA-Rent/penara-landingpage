@@ -45,7 +45,7 @@
                         </div>     
                         <div class="form-group">
                             <label for="exampleInputEmail1">Title</label>
-                            <input required type="text" class="form-control" name="title" placeholder="Enter Car Name">
+                            <input required type="text" class="form-control" name="title" placeholder="Enter Photo Name">
                         </div>                                        
                         <button type="submit" class="btn btn-success waves-effect waves-light m-r-10">Submit</button>
                         <a type="button" href="{{ route('admin.gallery.list') }}" class="btn btn-inverse">Cancel</a>
