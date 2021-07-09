@@ -14,72 +14,31 @@ class ServiceSeeder extends Seeder
         // Start Service 1
         DB::table('services')->insert([
             'title' => "Antar Kota",
-            'description' => "Risus commodo maecenas accumsan lacus vel facilisis. Lorem ipsum dolor consectetur adipiscing elit.",           
-            'icon_path' => "gauto/assets/img/airport-transport.png",            
+            'description' => "Kami adalah solusi kebutuhan transportasi Anda. Kami merupakan penyedia jasa sewa kendaraan / rental mobil Include Driver yang profesional untuk melayani keperluan bisnis, keluarga maupun liburan Anda.",           
+            'icon_path' => "gauto/assets/img/city-transport.png",            
             'image_path' => "gauto/assets/img/service-details-1.jpg"            
         ]);
 
-        DB::table('service_points')->insert([
-            'service_id' => 1,
-            'value' => "Point Lorem Ipsum 1",            
-        ]);
-
-        DB::table('service_points')->insert([
-            'service_id' => 1,
-            'value' => "Point Lorem Ipsum 2",            
-        ]);
-
-        DB::table('service_points')->insert([
-            'service_id' => 1,
-            'value' => "Point Lorem Ipsum 3",            
-        ]);
-
-        DB::table('service_faqs')->insert([
-            'service_id' => 1,
-            'question' => "This is Question",            
-            'answer' => "This is Answer",            
-        ]);
+        
         // End Service 1
 
         // Start Service 2
         DB::table('services')->insert([
             'title' => "Acara Pernikahan",
-            'description' => "Risus commodo maecenas accumsan lacus vel facilisis. Lorem ipsum dolor consectetur adipiscing elit.",           
+            'description' => "Kami melayani penyewaan mobil untuk acara pernikahan seperti, mobil pengantin dan mobil keluarga.",           
             'icon_path' => "gauto/assets/img/wedding-ceremony.png",            
             'image_path' => "gauto/assets/img/service-details-1.jpg"            
-        ]);
+        ]);        
+        // End Service 2
 
-        DB::table('service_points')->insert([
-            'service_id' => 2,
-            'value' => "Point Lorem Ipsum 1",            
-        ]);
-
-        DB::table('service_points')->insert([
-            'service_id' => 2,
-            'value' => "Point Lorem Ipsum 2",            
-        ]);
-
-        DB::table('service_points')->insert([
-            'service_id' => 2,
-            'value' => "Point Lorem Ipsum 3",            
-        ]);
-
-        DB::table('service_points')->insert([
-            'service_id' => 2,
-            'value' => "Point Lorem Ipsum 4",            
-        ]);
-
-        DB::table('service_faqs')->insert([
-            'service_id' => 2,
-            'question' => "This is Question",            
-            'answer' => "This is Answer",            
-        ]);
-
-        DB::table('service_faqs')->insert([
-            'service_id' => 2,
-            'question' => "This is Question",            
-            'answer' => "This is Answer",            
-        ]);
+        // Start Service 2
+        DB::table('services')->insert([
+            'title' => "Antar Jemput Bandara",
+            'description' => "Kami melayani jasa Antar-Jemput Bandara di seluruh Indonesia.
+            ",           
+            'icon_path' => "gauto/assets/img/airport-transport.png",            
+            'image_path' => "gauto/assets/img/service-details-1.jpg"            
+        ]);        
         // End Service 2
     }
 }
