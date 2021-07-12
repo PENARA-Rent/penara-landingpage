@@ -10,6 +10,7 @@
                     <li><a href="{{ route('service.list') }}">Layanan</a></li>                    
                     <li><a href="{{ route('car.list') }}">Mobil</a></li>                    
                     <li><a href="{{ route('gallery') }}">Galeri</a></li>
+                    <li><a href="{{ route('aboutus') }}">Tentang Kami</a></li>
                     
                     </ul>
                 </nav>

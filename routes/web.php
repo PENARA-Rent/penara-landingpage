@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'IndexController@index')->name('index');
 
 Route::get('/gallery', 'GalleryController@list')->name('gallery');
+Route::get('/aboutus', 'AboutusController@index')->name('aboutus');
 
 Route::group(['prefix' => 'service'], function()
 {
