@@ -13,7 +13,7 @@ class IndexController extends Controller
     
     public function index()
     {        
-        $cars = Car::take(3)->get();             
+        $cars = Car::where('activated', true)->take(3)->get();             
         return view('pages.main.index', compact('cars'));
     }
 }

@@ -16,16 +16,16 @@ class CarController extends Controller
     public function list($brandId = 0){        
         
         if($brandId == 0){
-            $cars = Car::paginate(4);                
+            $cars = Car::where('activated', true)->paginate(4);                
         }else {
             $cars = Car::whereHas('brand', function($query) use($brandId)
             {
-                $query->where('id','=', $brandId);
+                $query->where('id','=', $brandId)->where('activated', true);
 
             })->paginate(4);
         }
 
-        $allCarCount = Car::all()->count();
+        $allCarCount = Car::where('activated', true)->count();
         $brands = Brand::all();      
         
         return view('pages.main.car.list', compact('cars','brands','allCarCount','brandId'));
@@ -38,7 +38,7 @@ class CarController extends Controller
     }
     
     public function adminList(){                
-        $cars = Car::all();                
+        $cars = Car::where('activated', true)->get();            
         return view('pages.admin.car.list', compact('cars'));
     }  
     public function addForm(){                
@@ -100,6 +100,17 @@ class CarController extends Controller
         }
         
         return redirect()->back()->with('success', 'Car was Successfully Updated :)');           
+    }
+
+    public function deactive($id){                  
+                
+        $car = Car::find($id);                
+        
+        $car->activated = 0;        
+
+        $car->save();        
+        
+        return redirect()->back()->with('success', 'Car was Successfully Delated :)');           
     }
 
     public function store(Request $request){        

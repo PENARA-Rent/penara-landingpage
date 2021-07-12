@@ -42,11 +42,11 @@
                         @foreach ($brands as $brand)               
                             @if ($brandId == $brand->id)                            
                                 <li class="active">
-                                    <a href="{{ route('car.list', $brand->id )}}">{{$brand->name}}<span>({{ count($brand->cars) }})</span></a>
+                                    <a href="{{ route('car.list', $brand->id )}}">{{$brand->name}}<span>({{ $brand->cars->where('activated', 1)->count() }})</span></a>
                                 </li>
                             @else
                                 <li>
-                                    <a href="{{ route('car.list', $brand->id )}}">{{$brand->name}}<span>({{ count($brand->cars) }})</span></a>
+                                    <a href="{{ route('car.list', $brand->id )}}">{{$brand->name}}<span>({{ $brand->cars->where('activated', 1)->count() }})</span></a>
                                 </li>
                             @endif             
                         

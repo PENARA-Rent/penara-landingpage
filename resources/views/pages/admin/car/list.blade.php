@@ -48,6 +48,7 @@
                                 <td>{{$car->name}}</td>                                                        
                                 <td>                                                                        
                                     <a href="{{ route('admin.car.detail',$car->id) }}" data-toggle="tooltip" data-original-title="Detail"> <i class="fa fa-eye text-inverse m-r-10"></i> </a>                                    
+                                    <a href="{{ route('admin.car.deactive',$car->id) }}" data-toggle="tooltip" data-original-title="Delete"> <i class="fa fa-trash text-danger m-r-10"></i> </a>                                    
                                 </td>                              
                             </tr>                            
                             @endforeach
