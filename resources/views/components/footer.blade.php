@@ -10,7 +10,7 @@
                     <img src="{{asset ('gauto/assets/img/footer-logo.png')}}" alt="footer-logo" />
                     </a>
                     </div>
-                    <p>Penara adalah perusahaan rental mobil yang telah berpengalaman sejak 2015. Kami telah melayani banyak pelanggan Kami di seluruh Indonesia.</p>
+                    <p>Penara adalah perusahaan rental mobil yang telah berpengalaman sejak 2017. Kami telah melayani banyak pelanggan Kami di seluruh Indonesia.</p>
                     <div class="footer-address">
                     <h3>Kantor Pusat</h3>
                     <p>Jalan Merdeka, <span>Medan, Indonesia</span></p>
