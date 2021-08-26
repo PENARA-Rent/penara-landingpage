@@ -13,7 +13,7 @@ class Car extends Model
      * @var array
      */
     protected $fillable = [
-        'brand_id', 'name', 'description', 'price'
+        'brand_id', 'name', 'description', 'price', 'activated'
     ];
     public function brand()
     {

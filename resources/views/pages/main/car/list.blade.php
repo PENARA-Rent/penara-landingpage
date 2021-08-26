@@ -42,11 +42,11 @@
                         @foreach ($brands as $brand)               
                             @if ($brandId == $brand->id)                            
                                 <li class="active">
-                                    <a href="{{ route('car.list', $brand->id )}}">{{$brand->name}}<span>({{ count($brand->cars) }})</span></a>
+                                    <a href="{{ route('car.list', $brand->id )}}">{{$brand->name}}<span>({{ $brand->cars->where('activated', 1)->count() }})</span></a>
                                 </li>
                             @else
                                 <li>
-                                    <a href="{{ route('car.list', $brand->id )}}">{{$brand->name}}<span>({{ count($brand->cars) }})</span></a>
+                                    <a href="{{ route('car.list', $brand->id )}}">{{$brand->name}}<span>({{ $brand->cars->where('activated', 1)->count() }})</span></a>
                                 </li>
                             @endif             
                         
@@ -88,7 +88,7 @@
                                             
                                         </ul>
                                         <div class="offer-action">
-                                            <a href="#" class="offer-btn-1"><i>Booking</i></a>
+                                            <a href="https://wa.link/olxb9z" target="_blank" class="offer-btn-1"><i>Booking</i></a>
                                             <a href="{{ route('car.detail',$car->id) }}" class="offer-btn-2">Detail</a>
                                         </div>
                                     </div>

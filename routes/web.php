@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'IndexController@index')->name('index');
 
 Route::get('/gallery', 'GalleryController@list')->name('gallery');
+Route::get('/aboutus', 'AboutusController@index')->name('aboutus');
 
 Route::group(['prefix' => 'service'], function()
 {
@@ -60,6 +61,7 @@ Route::group(['prefix' => 'admin',  'middleware' => ['auth']], function(){
         Route::get('/add', 'CarController@addForm')->name('admin.car.add');
         Route::post('/store', 'CarController@store')->name('admin.car.store');
         Route::get('/detail/{id}', 'CarController@adminDetail')->name('admin.car.detail');
+        Route::get('/deactive/{id}', 'CarController@deactive')->name('admin.car.deactive');
         Route::post('/edit', 'CarController@edit')->name('admin.car.edit');
     });   
 

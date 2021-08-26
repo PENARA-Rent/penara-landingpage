@@ -32,8 +32,9 @@
              </div>
           </div>
           <div class="col-lg-6">
-             <div class="car-booking-right">
-                <p class="rental-tag">rental</p>
+             <div class="car-booking-right">                
+                
+                
                 <h3>{{ $car->brand->name }} {{ $car->name }}</h3>
                 <div class="price-rating">
                    <div class="price-rent">
@@ -47,7 +48,7 @@
                          <li><i class="fa fa-star"></i></li>
                          <li><i class="fa fa-star-half-o"></i></li>
                       </ul>
-                      <p>(123 rating)</p>
+                      {{-- <p>(123 rating)</p> --}}
                    </div>
                 </div>
                 <p>{{$car->description}}</p>
@@ -67,6 +68,7 @@
                         @endforeach
                     </ul>                   
                 </div>
+                <a href="https://wa.link/olxb9z" class="rental-tag" target="_blank">Booking</a>
              </div>
           </div>
        </div>
