@@ -113,6 +113,24 @@ class CarController extends Controller
         return redirect()->back()->with('success', 'Car was Successfully Delated :)');           
     }
 
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  \App\Photo  $photo
+     * @return \Illuminate\Http\Response
+     */
+    public function adminDelete($id)
+    {
+        //
+        $car = Car::find($id);      
+        return public_path($car->car_images[0]->path);
+        unlink(public_path($car->car_images[0]->path));         
+        $car->car_images[0]->delete();
+        $car->delete();
+
+        return redirect()->route('admin.car.list')->with('success', 'Car was Successfully Removed :)');          
+    }
+
     public function store(Request $request){        
         
         $validated = $request->validate([

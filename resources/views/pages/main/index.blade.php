@@ -12,9 +12,10 @@
                   <div class="row">
                      <div class="col-md-12">
                         <div class="slider-text">
-                           <p>Harga mulai Rp.200.000 / hari</p>
+                           <p>Harga mulai Rp.250.000 / hari</p>
                            <h2>Mobil Aman dan Nyaman</h2>
-                           <a href="#" class="gauto-btn">Pesan Sekarang</a>
+                           
+                           <a href="https://wa.link/olxb9z" target="_blank" class="gauto-btn">Pesan Sekarang</a>
                         </div>
                      </div>
                   </div>
@@ -31,7 +32,7 @@
                         <div class="slider-text">
                            <p>Pilihan Mobil Banyak</p>
                            <h2>Melayani di seluruh kota</h2>
-                           <a href="#" class="gauto-btn">Pesan Sekarang</a>
+                           <a href="https://wa.link/olxb9z" target="_blank" class="gauto-btn">Pesan Sekarang</a>
                         </div>
                      </div>
                   </div>
@@ -50,14 +51,15 @@
          <div class="col-lg-6">
             <div class="about-left">
                <h4>Tentang Kami</h4>
-               <h2>Selamat Datang di Rental Mobil PENARA</h2>
-               <p>Penara adalah perusahaan rental mobil yang telah berpengalaman sejak 2015. Kami telah melayani banyak pelanggan Kami di seluruh Indonesia</p>
+               <h2>Selamat Datang di Penara Rent Car</h2>
+               <p>Penara Rent Car adalah solusi kebutuhan transportasi Anda. Kami merupakan perusahaan yang bergerak dibidang jasa sewa kendaraan / rental mobil yang berpengalaman. Berdiri sejak tahun 2017 dan telah memiliki banyak pelanggan di seluruh Indonesia.</p>
                <div class="about-list">
                   <ul>
-                     <li><i class="fa fa-check"></i>Berpengalaman Sejak 2015</li>
-                     <li><i class="fa fa-check"></i>Pilihan Mobil Banyak</li>
-                     <li><i class="fa fa-check"></i>Mobil Aman dan Nyaman</li>
-                     <li><i class="fa fa-check"></i>Melayani di seluruh Indonesia</li>
+                     <li><i class="fa fa-check"></i>Berpengalaman Sejak 2017.</li>
+                     <li><i class="fa fa-check"></i>Berbagai Macam Pilihan Kendaraan.</li>
+                     <li><i class="fa fa-check"></i>Kendaraan Bersih & Terawat.</li>
+                     <li><i class="fa fa-check"></i>Driver Berpengalaman & Santun.</li>
+                     <li><i class="fa fa-check"></i>Melayani Seluruh Indonesia.</li>
                   </ul>
                </div>
                <div class="about-signature">
@@ -73,7 +75,7 @@
          </div>
          <div class="col-lg-6">
             <div class="about-right">
-               <img src="{{asset ('gauto/assets/img/about.png')}}" alt="car" />
+               <img src="{{asset ('gauto/assets/img/about-2.jpeg')}}" alt="car" />
             </div>
          </div>
       </div>
@@ -124,7 +126,7 @@
                                          
                                      </ul>
                                      <div class="offer-action">
-                                         <a href="#" class="offer-btn-1"><i>Booking</i></a>
+                                         <a href="https://wa.link/olxb9z" target="_blank" class="offer-btn-1"><i>Booking</i></a>
                                          <a href="{{ route('car.detail',$car->id) }}" class="offer-btn-2">Detail</a>
                                      </div>
                                  </div>
@@ -167,39 +169,11 @@
             <div class="testimonial-slider owl-carousel">
                <div class="single-testimonial">
                   <div class="testimonial-text">
-                     <p>"Dorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat adipisicing elit."</p>
+                     <p>"Mobilnya bersih dan nyaman, enak untuk dibawa keluar kota."</p>
                      <div class="testimonial-meta">
-                        <div class="client-image">
+                        {{-- <div class="client-image">
                            <img src="{{asset ('gauto/assets/img/testimonial.jpg')}}" alt="testimonial" />
-                        </div>
-                        <div class="client-info">
-                           <h3>Daeng Lolo</h3>
-                           <p>Jakarta</p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="single-testimonial">
-                  <div class="testimonial-text">
-                     <p>"Forem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat adipisicing elit."</p>
-                     <div class="testimonial-meta">
-                        <div class="client-image">
-                           <img src="{{asset ('gauto/assets/img/testimonial-2.jpg')}}" alt="testimonial" />
-                        </div>
-                        <div class="client-info">
-                           <h3>Haji Udin</h3>
-                           <p>Medan</p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="single-testimonial">
-                  <div class="testimonial-text">
-                     <p>"Dorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat adipisicing elit."</p>
-                     <div class="testimonial-meta">
-                        <div class="client-image">
-                           <img src="{{asset ('gauto/assets/img/testimonial.jpg')}}" alt="testimonial" />
-                        </div>
+                        </div> --}}
                         <div class="client-info">
                            <h3>Daeng Lolo</h3>
                            <p>Makassar</p>
@@ -209,14 +183,42 @@
                </div>
                <div class="single-testimonial">
                   <div class="testimonial-text">
-                     <p>"Dorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat adipisicing elit."</p>
+                     <p>"Harga sesuai pasaran, pemiliknya ramah, dan tidak ribet saat booking mobil."</p>
                      <div class="testimonial-meta">
-                        <div class="client-image">
-                           <img src="{{asset ('gauto/assets/img/testimonial.jpg')}}" alt="testimonial" />
-                        </div>
+                        {{-- <div class="client-image">
+                           <img src="{{asset ('gauto/assets/img/testimonial-2.jpg')}}" alt="testimonial" />
+                        </div> --}}
                         <div class="client-info">
-                           <h3>Daeng Lolo</h3>
-                           <p>Bali</p>
+                           <h3>Aprizal Nuri</h3>
+                           <p>Medan</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="single-testimonial">
+                  <div class="testimonial-text">
+                     <p>"Drivernya enak bawa mobilnya, bersih mobilnya dan pelayanannya sangat baik"</p>
+                     <div class="testimonial-meta">
+                        {{-- <div class="client-image">
+                           <img src="{{asset ('gauto/assets/img/testimonial.jpg')}}" alt="testimonial" />
+                        </div> --}}
+                        <div class="client-info">
+                           <h3>Muh. Fahmi</h3>
+                           <p>Jakarta</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="single-testimonial">
+                  <div class="testimonial-text">
+                     <p>"Pelayananya memuaskan, antar jemput tepat waktu, supirnya juga baik dan ramah"</p>
+                     <div class="testimonial-meta">
+                        {{-- <div class="client-image">
+                           <img src="{{asset ('gauto/assets/img/testimonial.jpg')}}" alt="testimonial" />
+                        </div> --}}
+                        <div class="client-info">
+                           <h3>Bu Marnia</h3>
+                           <p>Medan</p>
                         </div>
                      </div>
                   </div>
@@ -245,7 +247,7 @@
                      </div>
                      <div class="call-text">
                         <p>Butuh Mobil Sekarang Juga?</p>
-                        <h4><a href="#">+62 123 456 789</a></h4>
+                        <h4><a href="https://wa.link/olxb9z" target="_blank">+62 823-6687-6767</a></h4>
                      </div>
                   </div>
                </div>
@@ -256,7 +258,7 @@
 </section>
 <!-- Call Area End -->   
    
-<!-- Blog Area Start -->
+<!-- Blog Area Start 
 <section class="gauto-blog-area section_70">
    <div class="container">
       <div class="row">
@@ -334,7 +336,7 @@
       </div>
    </div>
 </section>
-<!-- Blog Area End -->
+Blog Area End -->
        
        
 @endsection

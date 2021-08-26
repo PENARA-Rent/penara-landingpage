@@ -22,7 +22,7 @@
                         <img src="{{asset ($service->icon_path)}}" />
                         </div>
                         <div class="service-text">
-                        <a href="{{ route('service.detail',$service->id) }}">
+                        <a>
                             <h3>{{ $service->title }}</h3>
                         </a>
                         <p>{{ $service->description }}</p>

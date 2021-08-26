@@ -19,6 +19,7 @@ class CreateCarsTable extends Migration
             $table->string('name');   
             $table->integer('price');   
             $table->string('description');             
+            $table->boolean('activated')->default(true);
             $table->timestamps();
         });
     }

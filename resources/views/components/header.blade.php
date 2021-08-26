@@ -4,7 +4,8 @@
         <div class="row">
         <div class="col-md-6">
             <div class="header-top-left">
-                <p>Hubungi: <i class="fa fa-phone"></i> WA: +62 123 45 978</p>
+                <p>Hubungi: <i class="fa fa-phone"></i> <a href="https://wa.link/olxb9z" target="_blank">+62 823-6687-6767</a></p>
+                
             </div>
         </div>                
         </div>
